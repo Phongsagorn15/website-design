@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจัดวางเลย์เอาท์บนเว็บเพจด้วย Float</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        .box-1 img{
+           float: left;
+        }
+        .box-2 img{
+           float: right; 
+        }
+        .box-3 img{
+            float: none;
+        }
+        .mycontainer{
+            background: #333;
+            color: white;
+            width: 96opx;
+            margin: 30px auto;
+        }
+        .box{
+            background-color: blanchedalmond;
+            color: black;
+            border: 1px solid #f0f;
+            padding: 10px 30px;
+            margin: 15px;
+            /*border-width: 3px;*/
+            /*border-color: blueviolet;*/
+        }
+        #box-1{
+
+        }
+        #box-2{
+            float: left;
+            width: 50%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>การจัดวางเลย์เอาท์บนเว็บเพจด้วย Float</h1>
+    <ul> float กำหนดให้อิลิเมนต์สามารถลอยอยู่ด้านใดด้านหนึ่ง
+        โดยค่าที่กำหนดดได้ คือ
+        <li>
+            left, right (ให้ลอยอยู่ทางด้านซ้ายและขวาตามลำดับ)
+        </li>
+        <li>
+            inherit ลอยตาม parent element
+        </li>
+        <li>
+            none ไม่ให้มีการลอย (default)
+        </li>
+    </ul>
+    <ul> clear ไม่อนุญาตให้มีการลอยของอิลิเมนต์ค่าที่กำหนดได้คือ
+        <li>
+            left, right (ไม่อนุญาตให้มีการลอยทางด้านซ้ายและขวา)
+        </li>
+        <li>
+            both ไม่อนุญาตให้ลอยทั้งสองด้าน
+        </li>
+    </ul>
+    <div class="box-1">
+       <p>
+         <img src="img/wowo.jpg" 
+         alt="" style="width: 100px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione 
+         tenetur explicabo dolorum ipsa labore rerum quod maiores odit magni aliquam architecto dolor, eum ad, perferendis molestias alias accusantium officia libero?
+       </p>
+    </div>
+    <div class="box-2">
+        <p>
+            <img src="img/wowo.jpg" 
+            alt="" style="width: 100px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione 
+            tenetur explicabo dolorum ipsa labore rerum quod
+        </p>
+     </div>
+     <div class="box-3">
+        <p>
+            <img src="img/wowo.jpg" 
+            alt="" style="width: 100px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione 
+            tenetur explicabo dolorum ipsa labore rerum quod
+        </p>
+     </div>
+<hr>
+      <div class="mycontainer">
+         <div id="box-1" class="box">
+            <h2>Title 1</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, debitis expedita. Consectetur, impedit sapiente voluptatem, repellendus, adipisci suscipit autem aut perferendis illo perspiciatis odio quasi? A qui sint ut in?</p>
+       </div>
+       <div id="box-2" class="box">
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab eos, labore autem aperiam non praesentium necessitatibus rerum numquam at, aut cum magni officiis explicabo! Quasi eos illo fuga optio.
+       </div>
+        <div id="box-3" class="box">
+             <h2>Title 3</h2>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae amet in velit, deleniti veniam libero dignissimos eius magni saepe expedita porro corrupti laudantium aut! Libero facere autem repudiandae doloremque consectetur!
+      </div>
+</body>
+</html>
